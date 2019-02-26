@@ -22,3 +22,53 @@ step 05
 
 step 06
    run and go to http://localhost:8080/beers 
+
+
+output: 
+
+{
+  "_embedded" : {
+    "beers" : [ {
+      "name" : "jai",
+      "abv" : 2.3,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/beers/1"
+        },
+        "beer" : {
+          "href" : "http://localhost:8080/beers/1"
+        }
+      }
+    }, {
+      "name" : "stone",
+      "abv" : 4.3,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/beers/2"
+        },
+        "beer" : {
+          "href" : "http://localhost:8080/beers/2"
+        }
+      }
+    }, {
+      "name" : "rock",
+      "abv" : 6.3,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/beers/3"
+        },
+        "beer" : {
+          "href" : "http://localhost:8080/beers/3"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/beers"
+    },
+    "profile" : {
+      "href" : "http://localhost:8080/profile/beers"
+    }
+  }
+}
